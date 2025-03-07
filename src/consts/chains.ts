@@ -24,27 +24,50 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
     ...eclipsemainnet,
     mailbox: eclipsemainnetAddresses.mailbox,
   },
-  // mycustomchain: {
-  //   protocol: ProtocolType.Ethereum,
-  //   chainId: 123123,
-  //   domainId: 123123,
-  //   name: 'mycustomchain',
-  //   displayName: 'My Chain',
-  //   nativeToken: { name: 'Ether', symbol: 'ETH', decimals: 18 },
-  //   rpcUrls: [{ http: 'https://mycustomchain-rpc.com' }],
-  //   blockExplorers: [
-  //     {
-  //       name: 'MyCustomScan',
-  //       url: 'https://mycustomchain-scan.com',
-  //       apiUrl: 'https://api.mycustomchain-scan.com/api',
-  //       family: ExplorerFamily.Etherscan,
-  //     },
-  //   ],
-  //   blocks: {
-  //     confirmations: 1,
-  //     reorgPeriod: 1,
-  //     estimateBlockTime: 10,
-  //   },
-  //   logoURI: '/logo.svg',
-  // },
+  sepolia: {
+    protocol: ProtocolType.Ethereum,
+    chainId: 11155111,
+    domainId: 123123,
+    name: 'sepolia',
+    displayName: 'Sepolia',
+    nativeToken: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    rpcUrls: [{ http: 'https://api.zan.top/eth-sepolia' }],
+    blockExplorers: [
+      {
+        name: 'MyCustomScan',
+        url: 'https://mycustomchain-scan.com',
+        apiUrl: 'https://api.mycustomchain-scan.com/api',
+        family: ExplorerFamily.Etherscan,
+      },
+    ],
+    blocks: {
+      confirmations: 1,
+      reorgPeriod: 1,
+      estimateBlockTime: 10,
+    },
+    logoURI: '/logo.svg',
+  },
+  minato: {
+    protocol: ProtocolType.Ethereum,
+    chainId: 1946,
+    domainId: 1946,
+    name: 'Minato',
+    displayName: 'Minato',
+    nativeToken: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+    rpcUrls: [{ http: 'https://soneium-minato.drpc.org' }],
+    blockExplorers: [
+      {
+        name: 'MyCustomScan',
+        url: 'https://mycustomchain-scan.com',
+        apiUrl: 'https://api.mycustomchain-scan.com/api',
+        family: ExplorerFamily.Etherscan,
+      },
+    ],
+    blocks: {
+      confirmations: 1,
+      reorgPeriod: 1,
+      estimateBlockTime: 10,
+    },
+    logoURI: '/logo.svg',
+  },
 };
