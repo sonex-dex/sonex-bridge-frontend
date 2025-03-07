@@ -4,7 +4,8 @@ import {
   solanamainnet,
   solanamainnetAddresses,
 } from '@hyperlane-xyz/registry';
-import { ChainMap, ChainMetadata, ProtocolType, ExplorerFamily } from '@hyperlane-xyz/sdk';
+import { ChainMap, ChainMetadata } from '@hyperlane-xyz/sdk';
+import { ProtocolType, ExplorerFamily } from '@hyperlane-xyz/utils';
 
 // A map of chain names to ChainMetadata
 // Chains can be defined here, in chains.json, or in chains.yaml
