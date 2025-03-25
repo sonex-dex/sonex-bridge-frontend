@@ -1,9 +1,4 @@
-import {
-  sepolia,
-  sepoliaAddresses,
-  soneiumtestnet,
-  soneiumtestnetAddresses,
-} from '@hyperlane-xyz/registry';
+import { opbnb, opbnbAddresses, soneium, soneiumAddresses } from '@hyperlane-xyz/registry';
 import { ChainMap, ChainMetadata } from '@hyperlane-xyz/sdk';
 
 // A map of chain names to ChainMetadata
@@ -11,12 +6,12 @@ import { ChainMap, ChainMetadata } from '@hyperlane-xyz/sdk';
 // Chains already in the SDK need not be included here unless you want to override some fields
 // Schema here: https://github.com/hyperlane-xyz/hyperlane-monorepo/blob/main/typescript/sdk/src/metadata/chainMetadataTypes.ts
 export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
-  sepolia: {
-    ...sepolia,
-    mailbox: sepoliaAddresses.mailbox,
+  opbnb: {
+    ...opbnb,
+    mailbox: opbnbAddresses.mailbox,
   },
-  soneiumtestnet: {
-    ...soneiumtestnet,
-    mailbox: soneiumtestnetAddresses.mailbox,
+  soneium: {
+    ...soneium,
+    mailbox: soneiumAddresses.mailbox,
   },
 };
