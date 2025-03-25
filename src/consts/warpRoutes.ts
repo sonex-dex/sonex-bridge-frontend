@@ -19,7 +19,7 @@ export const warpRouteConfigs: WarpCoreConfig = {
       // The address of the underlying collateral token
       collateralAddressOrDenom: '0x2779106e4F4A8A28d77A24c18283651a2AE22D1C',
       // A path to a token logo image
-      logoURI: '/logos/cake.svg',
+      logoURI: 'https://img.sonex.so/bridge/cake.svg',
       // The list of tokens this one is connected to
       connections: [{ token: 'ethereum|soneium|0x7c0c429e092Cb28fDcc3e6e67ca06D3b9fAb0306' }],
     },
@@ -30,7 +30,7 @@ export const warpRouteConfigs: WarpCoreConfig = {
       symbol: 'Cake',
       name: 'PancakeSwap Token',
       addressOrDenom: '0x7c0c429e092Cb28fDcc3e6e67ca06D3b9fAb0306',
-      logoURI: '/logos/cake.svg',
+      logoURI: 'https://img.sonex.so/bridge/cake.svg',
       connections: [{ token: 'ethereum|opbnb|0x7c0c429e092Cb28fDcc3e6e67ca06D3b9fAb0306' }],
     },
   ],
