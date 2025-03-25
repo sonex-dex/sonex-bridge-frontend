@@ -24,7 +24,7 @@ export const warpRouteConfigs: WarpCoreConfig = {
       connections: [{ token: 'ethereum|soneium|0x7c0c429e092Cb28fDcc3e6e67ca06D3b9fAb0306' }],
     },
     {
-      chainName: 'soneiumtestnet',
+      chainName: 'soneium',
       standard: TokenStandard.EvmHypSynthetic,
       decimals: 18,
       symbol: 'Cake',
