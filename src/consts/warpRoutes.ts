@@ -61,6 +61,34 @@ export const warpRouteConfigs: WarpCoreConfig = {
       logoURI: 'https://img.sonex.so/bridge/cake.svg',
       connections: [{ token: 'ethereum|bsc|0xa9aeCd99FEf9bAd545Cc00fc7E53E0a7D3B04778' }],
     },
+    {
+      // The ChainName of the token
+      chainName: 'bsc',
+      // See https://github.com/hyperlane-xyz/hyperlane-monorepo/blob/main/typescript/sdk/src/token/TokenStandard.ts
+      standard: TokenStandard.EvmHypCollateral,
+      // The token metadata (decimals, symbol, name)
+      decimals: 9,
+      symbol: 'BabyDoge',
+      name: `Baby Doge Coin`,
+      // The router address
+      addressOrDenom: '0x034108bA89ddd348981089375FE7d15013196d69',
+      // The address of the underlying collateral token
+      collateralAddressOrDenom: '0xc748673057861a797275cd8a068abb95a902e8de',
+      // A path to a token logo image
+      logoURI: 'https://img.sonex.so/bridge/cake.svg',
+      // The list of tokens this one is connected to
+      connections: [{ token: 'ethereum|soneium|0xa30211624f797Fb39803181a85A1b4453a9fC583' }],
+    },
+    {
+      chainName: 'soneium',
+      standard: TokenStandard.EvmHypSynthetic,
+      decimals: 9,
+      symbol: 'BabyDoge',
+      name: `Baby Doge Coin`,
+      addressOrDenom: '0xa30211624f797Fb39803181a85A1b4453a9fC583',
+      logoURI: 'https://img.sonex.so/bridge/cake.svg',
+      connections: [{ token: 'ethereum|bsc|0x034108bA89ddd348981089375FE7d15013196d69' }],
+    },
   ],
   options: {},
 };
