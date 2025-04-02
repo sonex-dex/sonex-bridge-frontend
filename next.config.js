@@ -15,7 +15,7 @@ const FRAME_SRC_HOSTS = [
   'https://*.walletconnect.org',
   'https://*.solflare.com',
 ];
-const STYLE_SRC_HOSTS = [];
+const STYLE_SRC_HOSTS = ['https://fonts.googleapis.com', 'https://static.cloudflareinsights.com'];
 const IMG_SRC_HOSTS = [
   'https://*.walletconnect.com',
   'https://*.githubusercontent.com',
