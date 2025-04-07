@@ -9,8 +9,7 @@ export const chains: ChainMap<ChainMetadata & { mailbox?: Address }> = {
   bsc: {
     ...bsc,
     rpcUrls: [
-      { http: 'https://bnb-mainnet.g.alchemy.com/v2/zd_R_1HU96Wq3zVPDsYG_BHfObwhGYm_' },
-      ...bsc.rpcUrls,
+      { http: 'https://bnb-mainnet.g.alchemy.com/v2/zd_R_1HU96Wq3zVPDsYG_BHfObwhGYm_' }
     ],
     mailbox: bscAddresses.mailbox,
   },
