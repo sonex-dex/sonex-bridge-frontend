@@ -40,3 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 
 .idea
+configs/warp-route-deployment.yaml
+
+.env

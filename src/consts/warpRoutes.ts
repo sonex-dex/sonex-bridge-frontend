@@ -89,6 +89,34 @@ export const warpRouteConfigs: WarpCoreConfig = {
       logoURI: 'https://img.sonex.so/bridge/babydoge.jpg',
       connections: [{ token: 'ethereum|bsc|0x034108bA89ddd348981089375FE7d15013196d69' }],
     },
+    {
+      // The ChainName of the token
+      chainName: 'ethereum',
+      // See https://github.com/hyperlane-xyz/hyperlane-monorepo/blob/main/typescript/sdk/src/token/TokenStandard.ts
+      standard: TokenStandard.EvmHypCollateral,
+      // The token metadata (decimals, symbol, name)
+      decimals: 18,
+      symbol: 'HERE',
+      name: `SphereX`,
+      // The router address
+      addressOrDenom: '0x7c0c429e092Cb28fDcc3e6e67ca06D3b9fAb0306',
+      // The address of the underlying collateral token
+      collateralAddressOrDenom: '0xD722424cF94b583752dfc80C08e2531AB3b762dc',
+      // A path to a token logo image
+      logoURI: 'https://img.sonex.so/bridge/here.svg',
+      // The list of tokens this one is connected to
+      connections: [{ token: 'ethereum|soneium|0x100931ED4320629C4cB0aB33c359626330806f09' }],
+    },
+    {
+      chainName: 'soneium',
+      standard: TokenStandard.EvmHypSynthetic,
+      decimals: 18,
+      symbol: 'HERE',
+      name: `SphereX`,
+      addressOrDenom: '0x100931ED4320629C4cB0aB33c359626330806f09',
+      logoURI: 'https://img.sonex.so/bridge/here.svg',
+      connections: [{ token: 'ethereum|ethereum|0x7c0c429e092Cb28fDcc3e6e67ca06D3b9fAb0306' }],
+    },
   ],
   options: {},
 };
