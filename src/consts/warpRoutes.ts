@@ -131,7 +131,7 @@ export const warpRouteConfigs: WarpCoreConfig = {
       // The address of the underlying collateral token
       collateralAddressOrDenom: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
       // A path to a token logo image
-      logoURI: 'https://img.sonex.so/bridge/wbnb.jpg',
+      logoURI: 'https://img.sonex.so/bridge/wbnb.png',
       // The list of tokens this one is connected to
       connections: [{ token: 'ethereum|soneium|0x77dd7C53cbC53c124dCCA99ca799665d18e9cdfB' }],
     },
@@ -142,7 +142,7 @@ export const warpRouteConfigs: WarpCoreConfig = {
       symbol: 'WBNB',
       name: `Wrapped BNB`,
       addressOrDenom: '0x77dd7C53cbC53c124dCCA99ca799665d18e9cdfB',
-      logoURI: 'https://img.sonex.so/bridge/wbnb.jpg',
+      logoURI: 'https://img.sonex.so/bridge/wbnb.png',
       connections: [{ token: 'ethereum|bsc|0x4fB85EA454dCe1910eB9F7aA82DAA0005De294C4' }],
     },
     {
@@ -159,7 +159,7 @@ export const warpRouteConfigs: WarpCoreConfig = {
       // The address of the underlying collateral token
       collateralAddressOrDenom: '0x783c3f003f172c6Ac5AC700218a357d2D66Ee2a2',
       // A path to a token logo image
-      logoURI: 'https://img.sonex.so/bridge/b2.jpg',
+      logoURI: 'https://img.sonex.so/bridge/b2.png',
       // The list of tokens this one is connected to
       connections: [{ token: 'ethereum|soneium|0x7Dd00550d8EBa4B59445923573B3B89389A03573' }],
     },
@@ -170,7 +170,7 @@ export const warpRouteConfigs: WarpCoreConfig = {
       symbol: 'B2',
       name: `BSquared Token`,
       addressOrDenom: '0x7Dd00550d8EBa4B59445923573B3B89389A03573',
-      logoURI: 'https://img.sonex.so/bridge/b2.jpg',
+      logoURI: 'https://img.sonex.so/bridge/b2.png',
       connections: [{ token: 'ethereum|bsc|0xeA88E4C9E077F22CC3c23B6F2056FD848DbdEb69' }],
     },
   ],
